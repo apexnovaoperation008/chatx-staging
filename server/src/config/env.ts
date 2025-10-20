@@ -9,14 +9,14 @@ const envSchema = z.object({
   DATABASE_PATH: z.string().default('./data/sessions.db'),
   AUDIT_LOG_PATH: z.string().default('./data/audit.log'),
   CORS_ORIGIN: z.string().default('http://localhost:3000'),
-  API_BASE_URL: z.string().default('http://localhost:3001'),
+  API_BASE_URL: z.string().default('https://backend-production-56cd.up.railway.app'),
   // WhatsApp
   WA_DATA_ROOT: z.string().default('./.wa-sessions'),
   WA_USE_CHROME: z.string().optional(),
   WA_HEADLESS: z.string().default('true'),
   // Telegram
-  TG_API_ID: z.string().default('123456'),
-  TG_API_HASH: z.string().default('your_api_hash'),
+  TG_API_ID: z.string().default('29393286'),
+  TG_API_HASH: z.string().default('b5888e16f0142310e30ed8523bee765a'),
   // Postgres
   PG_HOST: z.string().default('localhost'),
   PG_PORT: z.string().transform(Number).default('5432'),
@@ -24,7 +24,7 @@ const envSchema = z.object({
   PG_USER: z.string().default('postgres'),
   PG_PASSWORD: z.string().default('1234'),
   PG_SCHEMA: z.string().default('CHATX'),
-  PG_URL: z.string().default('postgresql://postgres:1234@localhost:5432/chatx'),
+  PG_URL: z.string().default('postgresql://postgres:FdRkimDdWQqZWNEXvTspmbdOSMLyFYyh@ballast.proxy.rlwy.net:17617/railway'),
 });
 
 function loadEnv() {
