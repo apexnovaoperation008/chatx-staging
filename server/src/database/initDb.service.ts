@@ -21,7 +21,8 @@ export async function initDb(){
             connectionString: config.PG_URL,
             ssl: {
                 rejectUnauthorized: false
-            }
+            },
+            options: `-c search_path=${config.PG_SCHEMA}`
         });
         
         try{

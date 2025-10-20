@@ -5,6 +5,7 @@ import { config } from "../config/env";
 const healthPool = new Pool({
   connectionString: config.PG_URL,
   max: 1, // only 1 connection just for health checks
+  options: `-c search_path=${config.PG_SCHEMA}`
 });
 
 let healthStatus = { status: "unknown", lastChecked: null as number | null };

@@ -23,8 +23,8 @@ const envSchema = z.object({
   PG_DB: z.string().default('chatx'),
   PG_USER: z.string().default('postgres'),
   PG_PASSWORD: z.string().default('1234'),
-  PG_SCHEMA: z.string().default('CHATX'),
-  PG_URL: z.string().default('postgresql://postgres:FdRkimDdWQqZWNEXvTspmbdOSMLyFYyh@ballast.proxy.rlwy.net:17617/railway'),
+  PG_SCHEMA: z.string().default('chatx'),
+  PG_URL: z.string().default('postgresql://postgres:WYnqZaRtwNFweCRDVubLxCeeElZtkBBh@centerbeam.proxy.rlwy.net:51662/railway'),
 });
 
 function loadEnv() {
