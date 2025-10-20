@@ -1,0 +1,24 @@
+{
+  "name": "testopenwa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node start.js",
+    "telegram": "node telegram-client.js",
+    "web": "node telegram-web-client.js",
+    "phone": "node telegram-phone-client.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "big-integer": "^1.6.52",
+    "express": "^5.1.0",
+    "input": "^1.0.1",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0",
+    "telegram": "^2.26.22"
+  }
+}
