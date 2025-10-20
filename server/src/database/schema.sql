@@ -1,13 +1,13 @@
 -- Step 1: Create database if it does not exist
-DO $$
-BEGIN
-    IF NOT EXISTS (
-        SELECT FROM pg_database WHERE datname = 'chatx'
-    ) THEN
-        PERFORM dblink_exec('CREATE DATABASE chatx');
-    END IF;
-END
-$$ LANGUAGE plpgsql;
+-- DO $$
+-- BEGIN
+--     IF NOT EXISTS (
+--         SELECT FROM pg_database WHERE datname = 'chatx'
+--     ) THEN
+--         PERFORM dblink_exec('CREATE DATABASE chatx');
+--     END IF;
+-- END
+-- $$ LANGUAGE plpgsql;
 
 
 -- Step 2: Create schema inside chatx
